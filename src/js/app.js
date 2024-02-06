@@ -25,6 +25,8 @@ function orderByProps(object, arr) {
         key: arr[i],
         value: object[arr[i]],
       });
+    } else {
+      throw new Error('Значение arr[i] не найдено в object');
     }
   }
   return output;
